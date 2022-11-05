@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/porco"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/cardview_shadow_end_color"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Calculadora"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edvalor1"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titulo"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:hint="valor 1"
+        android:padding="15dp"
+        android:textColor="@color/Rosa"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edvalor2"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edvalor1"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:hint="valor 2"
+        android:padding="15dp"
+        android:textColor="@color/Rosa"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/somar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edvalor2"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/RosaFraco"
+        android:padding="15dp"
+        android:text="Somar" />
+
+
+    <Button
+        android:id="@+id/subtrair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/somar"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/RosaFraco"
+        android:padding="15dp"
+        android:text="Subtrair" />
+
+    <Button
+        android:id="@+id/multiplicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtrair"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/RosaFraco"
+        android:padding="15dp"
+        android:text="Multiplicar" />
+
+    <Button
+        android:id="@+id/dividi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/multiplicar"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@color/RosaFraco"
+        android:padding="15dp"
+        android:text="Dividir" />
+
+
+</RelativeLayout>
